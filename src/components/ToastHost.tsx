@@ -1,0 +1,3 @@
+
+import { CheckCircle, Info, X, XCircle } from 'lucide-react';import { useStore } from '../store/useStore';
+export function ToastHost(){const {toasts,removeToast}=useStore();return <div className="fixed right-4 top-20 z-50 space-y-3">{toasts.map(t=><div key={t.id} className="glass flex w-80 items-start gap-3 rounded-2xl p-4 shadow-lift"><span>{t.type==='success'?<CheckCircle className="text-green-600"/>:t.type==='error'?<XCircle className="text-red-600"/>:<Info className="text-blue-600"/>}</span><div className="flex-1"><b>{t.title}</b>{t.message&&<p className="text-sm text-slate-600">{t.message}</p>}</div><button onClick={()=>removeToast(t.id)}><X size={16}/></button></div>)}</div>}

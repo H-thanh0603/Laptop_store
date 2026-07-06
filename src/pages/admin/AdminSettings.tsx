@@ -1,0 +1,2 @@
+
+export function AdminSettings(){return <div><h1 className="text-3xl font-black">Cài đặt</h1><div className="card mt-5 p-6"><h2 className="text-xl font-black">Laptop Store local demo</h2><p className="mt-2 text-slate-600">Dữ liệu sản phẩm, giỏ hàng, đơn hàng và mock auth đang lưu ở localStorage để dễ thay bằng API thật sau này.</p><ul className="mt-4 list-disc pl-5 text-slate-700"><li>Không có secret thật.</li><li>Tài khoản demo chỉ dùng kiểm thử frontend.</li><li>Có thể nâng cấp sang Express/Next.js + database bằng cách thay store/data layer.</li></ul></div></div>}
